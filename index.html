@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AKA ramen</title>
+  <!-- Save your CSS (the .pixelart-to-css rule + @keyframes x) as style.css in the same folder -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body { margin: 0; min-height: 100%; background: #fff; }
+    /* Tweak these two: --scale = size, --top = how far down the page it sits */
+    :root { --scale: 0.6; --top: 230px; }
+    .stage {
+      position: relative;
+      width: calc(480px * var(--scale));
+      height: calc(450px * var(--scale));
+      margin: var(--top) auto 0;
+    }
+    .pixelart-to-css { transform: scale(var(--scale)); transform-origin: 0 0; }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="pixelart-to-css"></div>
+  </div>
+</body>
+</html>
